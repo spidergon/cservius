@@ -1,5 +1,5 @@
 {
-  "name": "@example/basics",
+  "name": "cservius",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,9 +7,13 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write ."
   },
   "devDependencies": {
-    "astro": "^1.0.0-rc.7"
+    "astro": "1.0.0-rc.7",
+    "prettier": "^2.7.1",
+    "prettier-plugin-astro": "^0.3.0"
   }
 }
