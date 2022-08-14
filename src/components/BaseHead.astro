@@ -10,15 +10,16 @@ const {
 } = Astro.props as Props;
 
 const permalink = 'https://www.cservius.com';
-const version = '0.1';
-const socialImg = `${permalink}/assets/social.jpg?v=${version}`;
+const socialImg = `${permalink}/assets/social.jpg?v=0.1`;
 ---
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
-<link rel="icon" type="image/x-icon" href={`/assets/icon_64px.jpg?v=${version}`} />
-<link rel="apple-touch-icon" type="image/x-icon" href={`/assets/icon_180px.jpg?v=${version}`} />
+<link rel="icon" type="image/x-icon" href="/assets/icon_64px.jpg" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/icon_180px.jpg" />
+<link rel="stylesheet" media="print" href="/assets/print.css" />
+<meta name="generator" content={Astro.generator} />
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>

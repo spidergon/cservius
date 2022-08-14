@@ -13,10 +13,10 @@ export interface Props {
 const { title, description } = Astro.props as Props;
 ---
 
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <BaseHead title={title} {description} />
-    <link rel="stylesheet" media="print" href="/assets/print.css" />
   </head>
   <body>
     <Nav />
