@@ -6,23 +6,23 @@ export interface Props {
 
 const {
   title,
-  description = 'Transformation numérique et visibilité en ligne des entrepreneurs et porteurs de projets en Guyane et Outre-mer.',
+  description = 'Transformation numérique et visibilité en ligne des entrepreneurs en Guyane et Outre-mer, de manière éthique et durable.',
 } = Astro.props as Props;
 
 const permalink = 'https://www.cservius.com';
-const socialImg = `${permalink}/assets/social.jpg?v=0.2`;
+const socialImg = `${permalink}/assets/social.jpg?v=0.1`;
 ---
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
-<link rel="icon" type="image/x-icon" href="/assets/icon_64px.jpg" />
-<link rel="apple-touch-icon" type="image/x-icon" href="/assets/icon_180px.jpg" />
-<link rel="stylesheet" media="print" href="/assets/print.css" />
+<link rel="icon" type="image/x-icon" href="/assets/icon_64px.jpg?v=0.1" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/icon_180px.jpg?v=0.1" />
+<link rel="stylesheet" media="print" href="/assets/print.css?v=0.1" />
 <meta name="generator" content={Astro.generator} />
+<title>{title}</title>
 
 <!-- Primary Meta Tags -->
-<title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 
