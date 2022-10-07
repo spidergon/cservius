@@ -4,11 +4,6 @@ import compress from 'astro-compress';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [
-    sitemap(),
-    compress({
-      html: { collapseWhitespace: true, removeComments: true },
-    }),
-  ],
+  integrations: [sitemap(), compress()],
   site: 'https://www.cservius.com',
 });
