@@ -6,8 +6,8 @@ export interface Props {
 
 const {
   title,
-  description = 'Services numériques éco-responsables pour les entrepreneurs en Guyane et en Outre-mer.',
-} = Astro.props as Props;
+  description = 'Services numériques sur mesure, pour les entrepreneurs en Guyane et en Outre-mer.',
+} = Astro.props;
 
 const permalink = 'https://www.cservius.com';
 const socialImg = `${permalink}/assets/social.jpg?v=0.2`;
@@ -16,8 +16,7 @@ const socialImg = `${permalink}/assets/social.jpg?v=0.2`;
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
-<link rel="icon" type="image/x-icon" href="/assets/icon_64px.jpg?v=0.1" />
-<link rel="apple-touch-icon" type="image/x-icon" href="/assets/icon_180px.jpg?v=0.1" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="stylesheet" media="print" href="/assets/print.css?v=0.2" />
 <meta name="generator" content={Astro.generator} />
 <title>{title}</title>
